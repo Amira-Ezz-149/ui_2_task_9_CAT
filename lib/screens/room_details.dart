@@ -187,19 +187,19 @@ class RoomDetails extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 15.0,),
+            SizedBox(height: 20.0,),
             ElevatedButton(
               onPressed: () {},
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 60.0, vertical: 15),
-                child: const Text('Set Temperature'),
+                    const EdgeInsets.symmetric(horizontal: 80.0, vertical: 20),
+                child: const Text('Set Temperature', style: TextStyle(fontSize: 15.0),),
               ),
               style: ElevatedButton.styleFrom(
                 primary: Colors.deepPurple,
               ),
             ),
-            SizedBox(height: 50.0,)
+            SizedBox(height: 30.0,)
           ],
         ),
       ),
