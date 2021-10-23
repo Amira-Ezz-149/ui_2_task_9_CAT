@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyProvider extends ChangeNotifier{
-   Color color = Colors.orange;
+   Color color ;
    bool isChecked = true;
    bool switchChecked = false;
    Color switchColor ;
@@ -14,7 +14,7 @@ class MyProvider extends ChangeNotifier{
   void changeColor(){
     print('done');
     isChecked = !isChecked;
-    color = isChecked ? Colors.orange : Colors.grey.shade100;
+    color = isChecked ?   Colors.grey.shade100 :Colors.orange ;
     notifyListeners();
   }
 

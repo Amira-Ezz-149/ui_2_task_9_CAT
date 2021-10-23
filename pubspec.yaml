@@ -31,8 +31,8 @@ dependencies:
   provider: ^4.3.3
   curved_navigation_bar: ^0.3.7
   flutter_thermometer: ^1.0.0
-  #lite_rolling_switch: ^0.1.1
   flutter_circular_slider: ^2.5.0
+  font_awesome_flutter: ^8.12.0
 
 dev_dependencies:
   flutter_test:

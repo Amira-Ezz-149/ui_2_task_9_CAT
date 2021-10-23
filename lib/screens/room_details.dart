@@ -4,6 +4,7 @@ import 'package:flutter_circular_slider/flutter_circular_slider.dart';
 import 'package:provider/provider.dart';
 import 'package:ui_task_9_2_cat/tools/my_provider.dart';
 import 'package:ui_task_9_2_cat/widgets/category_item.dart';
+import 'package:ui_task_9_2_cat/widgets/list_view_items.dart';
 
 class RoomDetails extends StatelessWidget {
   @required
@@ -46,37 +47,7 @@ class RoomDetails extends StatelessWidget {
           children: [
             Container(
               height: height / 6,
-              child: ListView(
-                padding: EdgeInsets.only(top: 15.0),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 15.0,),
-                  CategoryItem(
-                    title: 'Sound',
-                    icon: Icons.music_note_outlined,
-                  ),
-                  SizedBox(width: 15.0,),
-                  CategoryItem(
-                    title: 'Fan',
-                    icon: Icons.airline_seat_flat,
-                  ),
-                  SizedBox(width: 15.0,),
-                  CategoryItem(
-                    title: 'Light',
-                    icon: Icons.lightbulb,
-                  ),
-                  SizedBox(width: 15.0,),
-                  CategoryItem(
-                    title: 'Heater',
-                    icon: Icons.music_note_outlined,
-                  ),
-                  SizedBox(width: 15.0,),
-                  CategoryItem(
-                    title: 'Heater',
-                    icon: Icons.music_note_outlined,
-                  ),
-                ],
-              ),
+              child: ListViewItems(),
             ),
             SizedBox(height: 15.0,),
             Expanded(
@@ -206,3 +177,4 @@ class RoomDetails extends StatelessWidget {
     );
   }
 }
+

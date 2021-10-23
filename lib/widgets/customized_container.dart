@@ -22,7 +22,7 @@ class CustomizedContainer extends StatefulWidget {
 }
 
 class _CustomizedContainerState extends State<CustomizedContainer> {
-  bool checked = true;
+  bool checked = false;
 
   @override
   Widget build(BuildContext context) {
